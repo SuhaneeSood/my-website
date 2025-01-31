@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suhanee Sood - Contact Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+<!--creating a nav bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Main navigation"> 
+      <div class="container">
+        <a class="navbar-brand" href="#">Suhanee Sood</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+         <a class="nav-link" href="Index.html">Home</a>
+        <a class="nav-link" aria-current="page" href="#">Contact Information</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+		<a class="nav-link" href="portfolio.html">Portfolio</a>
+		<a class="nav-link" href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+	  
+
+	  <!--Title Section-->
+	  
+	  <div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <h2 class="large-text">Contact Information</h2>
+      <p class="lead large-text">Please fill out the form below to get in touch with me.</p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <form class="needs-validation" novalidate>
+      <div class="row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="" required>
+          <div class="invalid-feedback">
+            Valid first name is required.
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <label for="email" class="form-label">Email <span class="text-body-secondary">(Required)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="phone" class="form-label">Phone Number <span class="text-body-secondary">(Optional)</span></label>
+          <input type="tel" class="form-control" id="phone" placeholder="123-456-7890">
+        </div>
+
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="4" required></textarea>
+          <div class="invalid-feedback">
+            Please enter a message.
+          </div>
+        </div>
+      </div>
+
+    <hr class="my-4">
+  <button class="w-100 btn btn-primary" type="submit" data-bs-toggle="tooltip" title="Click to submit form" aria-label="Submit contact form">Submit</button>
+</form>
+
+<script>
+    (function () {
+      'use strict';
+
+      var forms = document.querySelectorAll('.needs-validation');
+
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add('was-validated');
+          }, false);
+        });
+    })();
+  </script>
+  
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"><i class="bi bi-chat-right-quote-fill"></i>Platform</th>
+      <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+  <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914"/>
+		  
+    <!-- Table  -->		  
+		  
+</svg>Information </th>
+		
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>LinkedIn</td>
+      <td>www.linkedin.com/in/suhanee-sood</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Email</td>
+      <td>suhanee.sood@mail.utoronto.ca</td>
+    
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Phone</td>
+      <td>647-800-0000</td>
+    </tr>
+  </tbody>
+</table>
+	
+	  
+	  
+
+<!--footer section-->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-secondary text-white">
+      <p class="col-md-4 mb-0 text-white">&copy; 2024 Suhanee Sood </p>
+      <ul class="nav col-md-4 justify-content-end text-white">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Privacy Policy</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Terms of Use</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
